@@ -1,4 +1,4 @@
-package main
+package hello
 
 import (
 	"fmt"
@@ -42,8 +42,4 @@ func Var() {
 
 	c := "Hello C"
 	fmt.Println(c)
-}
-
-func main() {
-	// fmt.Println(Hello("Chris",))
 }
