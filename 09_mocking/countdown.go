@@ -1,9 +1,8 @@
-package main
+package countdown
 
 import (
 	"fmt"
 	"io"
-	"os"
 	"time"
 )
 
@@ -62,9 +61,4 @@ func Countdown(out io.Writer, startCount int, sleeper Sleeper) {
 
 	fmt.Fprintln(out, finalWord)
 
-}
-
-func main() {
-	sleeper := &ConfigurableSleeper{1 * time.Second, time.Sleep}
-	Countdown(os.Stdout, 6, sleeper)
 }
