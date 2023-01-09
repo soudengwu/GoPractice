@@ -1,8 +1,13 @@
 package main
 
-func main() {
-	// fmt.Println(Hello("Chris",))
-	// 	sleeper := &ConfigurableSleeper{1 * time.Second, time.Sleep}
-	// 	Countdown(os.Stdout, 6, sleeper)
+import (
+	"os"
+	"time"
 
+	clockFace "github.com/soudengwu/GoPractice/015_maths"
+)
+
+func main() {
+	t := time.Now()
+	clockFace.SVGWriter(os.Stdout, t)
 }
