@@ -39,12 +39,11 @@ type Line struct {
 }
 
 const (
-	secondsInHalfClock = 30
-	secondsInClock     = 2 * secondsInHalfClock
-	minutesInHalfClock = 30
-	minutesInClock     = 2 * minutesInHalfClock
-	hoursInHalfClock   = 6
-	hoursInClock       = 2 * hoursInHalfClock
+	secondHandLength = 90
+	minuteHandLength = 80
+	hourHandLength   = 50
+	clockCentreX     = 150
+	clockCentreY     = 150
 )
 
 func secondHand(w io.Writer, t time.Time) {
